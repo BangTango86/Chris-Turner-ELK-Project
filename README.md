@@ -13,6 +13,9 @@ These files have been tested and used to generate a live ELK deployment on Azure
 
 Click [Here](https://github.com/BangTango86/Chris-Turner-ELK-Project/blob/main/Linux/filebeat-playbook.yml) to view filebeat-playbook.yml
 
+Click [Here](https://github.com/BangTango86/Chris-Turner-ELK-Project/blob/main/Linux/metricbeat-playbook.yml) to view metricbeat-playbook.yml
+
+
 This document contains the following details:
 - Description of the Topology
 - Access Policies
