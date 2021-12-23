@@ -64,11 +64,17 @@ Which machine did you allow to access your ELK VM?  The JumpBoxProvisioner VM
 What was its IP address? 40.86.81.155
 
 A summary of the access policies in place can be found in the table below.
-| Name     | Publicly Accessible | Allowed IP Addresses |
-|----------|---------------------|----------------------|
-| Jump Box | Yes/No              | 10.0.0.1 10.0.0.2    |
-|          |                     |                      |
-|          |                     |                      |
+
+| Name        | Publicly Accessible | Port | Allowed IP Addresses |
+|-------------|---------------------|------|----------------------|
+| JumpBox     | Yes                 |      | 162.220.68.136       |
+| ELK VM      | Yes                 | 5601 | 162.220.68.136       |
+| Web-1 VM    | No                  |      | 10.0.0.4             |
+| Web-2 VM    | No                  |      | 10.0.0.4             |
+| Red-Team-LB | Yes                 | 80   | 162.220.68.136       |
+
+
+
 ### Elk Configuration
 Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because...
 - _TODO: What is the main advantage of automating configuration with Ansible?_
