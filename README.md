@@ -41,13 +41,15 @@ Metricbeat records metrics from the Operating system and services running on the
 
 
 The configuration details of each machine may be found below.
+
+| Name     | Function               | IP           | OS    |
+|----------|------------------------|--------------|-------|
+| JumpBox  | Gateway Docker/Ansible | 40.86.81.155 | Linux |
+| ELK VM   | ELK Stack Server       | 52.159.90.6  | Linux |
+| Web-1 VM | Webserver              | 10.1.0.5     | Linux |
+| Web-2 VM | Webserver              | 10.1.0.6     | Linux |
+
 _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdown_tables) to add/remove values from the table_.
-| Name     | Function | IP Address | Operating System |
-|----------|----------|------------|------------------|
-| Jump Box | Gateway  | 10.0.0.1   | Linux            |
-| TODO     |          |            |                  |
-| TODO     |          |            |                  |
-| TODO     |          |            |                  |
 ### Access Policies
 The machines on the internal network are not exposed to the public Internet. 
 Only the _____ machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
