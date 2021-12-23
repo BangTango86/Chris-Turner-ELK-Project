@@ -26,11 +26,20 @@ This document contains the following details:
 
 ### Description of the Topology
 The main purpose of this network is to expose a load-balanced and monitored instance of DVWA, the D*mn Vulnerable Web Application.
-Load balancing ensures that the application will be highly available, in addition to restricting unauthorized access to the network.
-Load balancers protect the system against DDoS attacks What is the advantage of a jump box?_
-Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the _____ and system _____.
-- _TODO: What does Filebeat watch for?_
-- _TODO: What does Metricbeat record?_
+Load balancing ensures that the application will be highly available and responsive, in addition to restricting unauthorized access to the network.
+
+Load Balancers protect the system against denial of service attacks (DDoS) because the load balancer analyzes all traffic coming in and determines which server to send the traffic to. This prevents one server from getting overloaded with traffic because the load balancer allows traffic to be distributed evenly among the servers that are connected to it.  Load balancers often have a health probe that periodically checks that the connected machines are working properly before sending traffic. If it isn't, the load balancer will divert traffic from the malfunctioning server until the issue is resolved. 
+
+A jump box limits the access that the public has to your virtual network because in order to access the other virtual machines inside the network, an individual needs the private IPs of the webservers in order to connect to them. A jumpbox allows greater control over access to a virtual network and its contents.
+
+
+Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the logs, system files and traffic.
+
+Filebeat generates and organizes log files.  Then looks for changes in the files and when they occured.
+
+Metricbeat records metrics from the Operating system and services running on the server. By using Logstash or Elasticsearch, you can visualize the metrics and statistics that Metricbeat generates from the OS and running services.
+
+
 The configuration details of each machine may be found below.
 _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdown_tables) to add/remove values from the table_.
 | Name     | Function | IP Address | Operating System |
