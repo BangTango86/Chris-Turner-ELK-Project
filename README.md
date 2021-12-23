@@ -6,7 +6,7 @@ The files in this repository were used to configure the network depicted below.
 
 
 
-Click [Here] (Chris_Turner_ELK_Project_Diagram.png) to go to my diagarm.
+Click [Here](https://github.com/BangTango86/Chris-Turner-ELK-Project/blob/main/Diagrams/Chris_Turner_ELK_Project_Diagram.png) to go to my diagarm.
 
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the configuration .yml files may be used to install only certain pieces of it, such as Filebeat.
