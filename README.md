@@ -81,9 +81,14 @@ Ansible was used to automate configuration of the ELK machine. No configuration 
 By using an Ansible playbook I was able to automate the configuration and installation of the ELK Stack Server.  The playbook eliminates the possability of human error during installation.  It also makes the procedure easily replicatable across the network to save time and money.
 
 The playbook implements the following tasks:
-- _TODO: In 3-5 bullets, explain the steps of the ELK installation play. E.g., install Docker; download image; etc._
-- ...
-- ...
+1. Install docker.io
+2. Install python3-pip
+3. Install Python Docker module
+4. Increase the virtual memory of the ELK VM to 262144
+5. D/L and launch a docker ELK container
+6. Enable service docker on boot
+
+
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 ![TODO: Update the path with the name of your screenshot of docker ps output](Images/docker_ps_output.png)
 ### Target Machines & Beats
