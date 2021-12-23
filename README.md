@@ -50,12 +50,19 @@ The configuration details of each machine may be found below.
 | Web-2 VM | Webserver              | 10.1.0.6     | Linux |
 
 _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdown_tables) to add/remove values from the table_.
+
+
 ### Access Policies
 The machines on the internal network are not exposed to the public Internet. 
-Only the _____ machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
-- _TODO: Add whitelisted IP addresses_
-Machines within the network can only be accessed by _____.
-- _TODO: Which machine did you allow to access your ELK VM? What was its IP address?_
+Only the JumpBox machine can accept connections from the Internet. Access to this machine is only allowed from the following IP address.  
+
+162.220.68.136
+
+Machines within the network can only be accessed by the JumpBoxProvisioner VM.
+
+Which machine did you allow to access your ELK VM?  The JumpBoxProvisioner VM 
+What was its IP address? 40.86.81.155
+
 A summary of the access policies in place can be found in the table below.
 | Name     | Publicly Accessible | Allowed IP Addresses |
 |----------|---------------------|----------------------|
