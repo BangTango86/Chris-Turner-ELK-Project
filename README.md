@@ -6,7 +6,7 @@ The files in this repository were used to configure the network depicted below.
 
 
 
-Click [Here](https://github.com/BangTango86/Chris-Turner-ELK-Project/blob/main/Diagrams/Chris_Turner_ELK_Project_Diagram.png) to go to my diagarm.
+Click [Here](https://github.com/BangTango86/Chris-Turner-ELK-Project/blob/main/Diagrams/Chris_Turner_ELK_Project_Diagram.png) to view my diagarm.
 
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the configuration .yml files may be used to install only certain pieces of it, such as Filebeat.
@@ -88,9 +88,20 @@ The playbook implements the following tasks:
 5. D/L and launch a docker ELK container
 6. Enable service docker on boot
 
-
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
-![TODO: Update the path with the name of your screenshot of docker ps output](Images/docker_ps_output.png)
+
+![Succesful_ELK](https://user-images.githubusercontent.com/90289282/147300724-4f56c54f-237c-4d50-8d89-d200002356f9.png)
+
+
+Click [Here](https://github.com/BangTango86/Chris-Turner-ELK-Project/blob/main/Diagrams/Succesful_ELK.png) to view my screenshot
+
+
+
+
+
+
+
+
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
 - _TODO: List the IP addresses of the machines you are monitoring_
