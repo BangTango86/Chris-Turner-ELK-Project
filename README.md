@@ -133,6 +133,20 @@ Where do you copy it?
 
 Place it in  /etc/ansible/
 
-Which file do you update to make Ansible run the playbook on a specific machine? How do I specify which machine to install the ELK server on versus which to install Filebeat on?_
-- _Which URL do you navigate to in order to check that the ELK server is running?
+Which file do you update to make Ansible run the playbook on a specific machine? 
+
+filebeat-config.yml As mentioned above.
+
+
+How do I specify which machine to install the ELK server on versus which to install Filebeat on?
+
+Copy the host file into /etc/ansible.  Nano into the host file.  Under "webservers" place your Web-1 and Web-2 VM IP's.  Then add your ELK VM IP under "elk".  Now, nano into the playbook files and near the top you can specifiy which "host" you want the playbook to run on.  Either "webservers" or "elk".
+
+
+Which URL do you navigate to in order to check that the ELK server is running?
+
+http://(ELK vm public IP):5601/app/kibana
+
+
+
 _As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc._
