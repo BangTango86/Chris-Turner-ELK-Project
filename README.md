@@ -143,6 +143,9 @@ How do I specify which machine to install the ELK server on versus which to inst
 Copy the host file into /etc/ansible.  Nano into the host file.  Under "webservers" place your Web-1 and Web-2 VM IP's.  Then add your ELK VM IP under "elk".  Now, nano into the playbook files and near the top you can specifiy which "host" you want the playbook to run on.  Either "webservers" or "elk".
 
 
+Click [Here](https://github.com/BangTango86/Chris-Turner-ELK-Project/blob/main/Ansible/hosts) to view the host file
+
+
 Which URL do you navigate to in order to check that the ELK server is running?
 
 http://(ELK vm public IP):5601/app/kibana
