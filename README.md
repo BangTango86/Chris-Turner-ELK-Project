@@ -123,9 +123,16 @@ password "changeme"
 Line 1805 setup.Kibana
 "(ELK VM private IP):5601"
 
-- Run the playbook, and navigate to ____ to check that the installation worked as expected.
-_TODO: Answer the following questions to fill in the blanks:_
-- _Which file is the playbook? Where do you copy it?_
-- _Which file do you update to make Ansible run the playbook on a specific machine? How do I specify which machine to install the ELK server on versus which to install Filebeat on?_
+Run the filebeat playbook, and navigate to http://(ELK public IP):5601/app/kibana Click on "Check Data" to check that the installation worked as expected.
+
+Which file is the playbook? filebeat-playbook.yml
+
+Click [Here](https://github.com/BangTango86/Chris-Turner-ELK-Project/blob/main/Linux/filebeat-playbook.yml) to view filebeat-playbook.yml
+
+Where do you copy it?
+
+Place it in  /etc/ansible/
+
+Which file do you update to make Ansible run the playbook on a specific machine? How do I specify which machine to install the ELK server on versus which to install Filebeat on?_
 - _Which URL do you navigate to in order to check that the ELK server is running?
 _As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc._
