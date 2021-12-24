@@ -111,8 +111,18 @@ Metricbeat is an OS and services metrics and statistics collection tool.  It tak
 ### Using the Playbook
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
 SSH into the control node and follow the steps below:
-- Copy the _____ file to _____.
-- Update the _____ file to include...
+
+Copy the filebeat-config.yml file to /etc/ansible/files.
+
+Click [Here](https://github.com/BangTango86/Chris-Turner-ELK-Project/blob/main/Linux/filebeat-config.yml) for to view file
+
+Update the filebeat-config.yml file to include
+Line 1105 host IP (change to ELK VM private IP):9200
+user name "elastic"
+password "changeme"
+Line 1805 setup.Kibana
+"(ELK VM private IP):5601"
+
 - Run the playbook, and navigate to ____ to check that the installation worked as expected.
 _TODO: Answer the following questions to fill in the blanks:_
 - _Which file is the playbook? Where do you copy it?_
