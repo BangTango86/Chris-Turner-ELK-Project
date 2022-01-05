@@ -56,7 +56,7 @@ _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdow
 The machines on the internal network are not exposed to the public Internet. 
 Only the JumpBox machine can accept connections from the Internet. Access to this machine is only allowed from the following IP address.  
 
-162.220.68.136
+{Public IP Address}
 
 Machines within the network can only be accessed by the JumpBoxProvisioner VM.
 
@@ -67,11 +67,11 @@ A summary of the access policies in place can be found in the table below.
 
 | Name        | Publicly Accessible | Port | Allowed IP Addresses |
 |-------------|---------------------|------|----------------------|
-| JumpBox     | Yes                 |      | 162.220.68.136       |
-| ELK VM      | Yes                 | 5601 | 162.220.68.136       |
+| JumpBox     | Yes                 |      | {Public IP Address}       |
+| ELK VM      | Yes                 | 5601 | {Public IP Address}      |
 | Web-1 VM    | No                  |      | 10.0.0.4             |
 | Web-2 VM    | No                  |      | 10.0.0.4             |
-| Red-Team-LB | Yes                 | 80   | 162.220.68.136       |
+| Red-Team-LB | Yes                 | 80   | {Public IP Address}      |
 
 
 
